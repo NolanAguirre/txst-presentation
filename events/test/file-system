@@ -1,0 +1,2 @@
+#!/bin/sh
+touch  ../watch-directory/"{\"event\":\"createMessage\",\"data\":{\"from\":\"9aa6debe-4c80-47d9-b3c4-f962239ec1d4\",\"to\":\"6b84d2db-dd4b-4617-b305-fcac042ff1b5\",\"message\":\"The new tool album is great.\"}}"

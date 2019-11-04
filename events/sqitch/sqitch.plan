@@ -1,0 +1,4 @@
+%syntax-version=1.0.0
+%project=postgres
+
+v0.0.1 2019-11-04T16:55:07Z Nolan Aguirre <nolan@nolan> # add initial database migration

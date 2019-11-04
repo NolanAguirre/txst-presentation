@@ -1,0 +1,9 @@
+#!/usr/local/bin/node
+const {Client} = require('pg')
+client = new Client({connectionString:'postgresql://postgres@localhost:5432/txst'})
+client.connect()
+client.query(`insert into txst.accounts (id, first_name, last_name, user_name) values ('6b84d2db-dd4b-4617-b305-fcac042ff1b5', 'En', 'Emmerson', 'RHCP4LYFE'),('9aa6debe-4c80-47d9-b3c4-f962239ec1d4','Nolan', 'Aguirre', 'RHCPSUX') ON CONFLICT DO NOTHING;`).then((data)=>{
+    client.query(`insert into txst.messages("from", "to", "message") VALUES ('9aa6debe-4c80-47d9-b3c4-f962239ec1d4', '6b84d2db-dd4b-4617-b305-fcac042ff1b5', 'The new tool album is great.');`).then(()=>{
+        client.end()
+    })
+})

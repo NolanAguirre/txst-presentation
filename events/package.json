@@ -1,0 +1,20 @@
+{
+  "name": "txst-network-abstraction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nolan Aguirre",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fero": "^1.7.1",
+    "pg-promise": "^9.3.3",
+    "ws": "^7.2.0"
+  }
+}
